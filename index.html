@@ -85,7 +85,7 @@ function addHint(){
 	document.getElementById("txt_0_4").placeholder = "1";
 	document.getElementById("txt_2_6").placeholder = "2";
 	document.getElementById("txt_3_1").placeholder = "3";
-	document.getElementById("txt_3_9").placeholder = "4";
+	document.getElementById("txt_8_0").placeholder = "4";
 	document.getElementById("txt_6_2").placeholder = "5";
 	document.getElementById("txt_9_0").placeholder = "6";
 }
@@ -95,18 +95,32 @@ function textInputFocus(txtID123){
 }
 //Returns Array
 function preparePuzzelArray(){
-var items = [	[0, 0, 0, 0, 'p', 0, 0, 0, 0, 0],
-				[0, 0, 0, 0, 'u', 0, 0, 0, 0, 0 ],
-				[0, 0, 0, 0, 'n', 0, 'b', 0, 0, 0],
-				[0, 'h', 'y', 'd', 'e', 'r', 'a', 'b', 'a', 'd'],
-				[0, 0, 0, 0, 0, 0, 'n', 0, 0, 'e'],
-				[0, 0, 0, 0, 0, 0, 'g', 0, 0, 'l'],
-				[0, 0, 'm', 'u', 'm', 'b', 'a', 'i', 0, 'h'],
-				[0, 0, 0, 0, 0, 0, 'l', 0, 0, 'i'],
-				[0, 0, 0, 0, 0, 0, 'o', 0, 0, 0],
-				['k', 'a', 's', 'h', 'm', 'i','r', 0, 0, 0],
-				[0, 0, 0, 0, 0, 0, 'e', 0, 0, 0]
-			];
+var items = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 'c', 0, 0, 0, 'b', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 'o', 0, 0, 0, 'r', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 'o', 0, 0, 0, 'i', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 'r', 0, 0, 0, 't', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 'd', 0, 0, 0, 'i', 0, 'l', 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 'i', 0, 0, 0, 's', 0, 'i', 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 'n', 0, 0, 0, 'h', 0, 'b', 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 'a', 0, 0, 0, 'r', 0, 'y', 0, 0, 0, 0, 0, 0, 0],
+    ['n', 'i', 'r', 'm', 'a', 'l', 'a', 's', 'i', 't', 'h', 'a', 'r', 'a', 'm', 'a', 'n', 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 'm', 0, 0, 'i', 0, 0, 0, 'j', 0, 0, 'e', 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 'a', 0, 0, 'o', 0, 0, 0, 0, 0, 0, 'i', 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 'r', 0, 0, 'n', 0, 0, 0, 0, 0, 0, 'l', 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 't', 0, 0, 0, 0, 'p', 'h', 'i', 'l', 'i', 'p', 'k', 'o', 't', 'l', 'e', 'r'],
+    [0, 0, 0, 0, 0, 0, 'y', 0, 0, 0, 0, 0, 0, 'n', 0, 0, 'a', 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 'a', 0, 0, 0, 0, 0, 0, 'd', 'e', 'b', 't', 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 's', 0, 0, 0, 0, 0, 0, 'e', 0, 0, 'e', 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 'e', 0, 0, 0, 0, 0, 0, 'r', 0, 0, 'l', 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 'n', 0, 0, 0, 0, 0, 0, 'm', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'i', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 't', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'g', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'i', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'l', 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'l', 0, 0, 0, 0, 0, 0, 0, 0, 0]
+];
 return items;
 }
 //Clear All Button
@@ -202,13 +216,26 @@ function solveClicked(){
 			<td><strong>Horizontal:</strong></td><td><strong>Vertical:</strong></td>
 		</tr>
 		<tr>
-			<td>3. Cultural Hub (Hyderabad)</td><td>1. Education Hub (Pune)</td>
+			<td>4. who is the current finance minister of India?</td><td>1. What is the essence of management.</td>
 		</tr>
 		<tr>
-			<td>5. India's financial capital (Mumbai)</td><td>2. Information Technology Hub (Bangalore)</td>
+			<td>7. Who is Father of marketing management?</td><td>2. Who is the founder of RBI?</td>
 		</tr>
 		<tr>
-			<td>6. Saffron region (Kashmir)</td><td>4. Capital of India (Delhi)</td>
+			<td>9. A sum of money that is owed or due.</td><td>3. Who has the fastest GDP growth?</td>
+        </tr>
+<!-- ---- -->
+        <tr>
+			<td></td><td>5. who got first Nobel prize in economics in India?</td>
+        </tr>
+
+        <tr>
+			<td></td><td>6. Who is the most famous digital marketer?</td>
+        </tr>
+
+        <tr>
+			<td></td><td>8. who is the president of world Bank?</td>
+        </tr>
 </table>
 
 </body>
